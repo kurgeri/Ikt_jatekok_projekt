@@ -1,0 +1,150 @@
+Rockstar Games;Grand Theft Auto V;11698,05
+Mojang;Minecraft;8997
+Nintendo;Wii Sports;4144,171
+Rockstar Games;Red Dead Redemption 2;3659,39
+Nintendo;Mario Kart 8 Deluxe;3634,1942
+Nintendo;Super Mario Bros.;2899,42
+EA;The Sims 4;2799,3
+Nintendo;Animal Crossing: New Horizons;2686,9521
+Bethesda;The Elder Scrolls V: Skyrim;2399,4
+Krafton;PUBG: Battlegrounds;2249,25
+Sony;The Last of Us;2219,63
+Nintendo;Super Smash Bros. Ultimate;2019,8633
+CD Projekt;The Witcher 3: Wild Hunt;1999,5
+Blizzard;Overwatch;1999,5
+Sony;Marvel's Spider-Man;1979,67
+Nintendo;The Legend of Zelda: Breath of the Wild;1896,2839
+Nintendo;Mario Kart Wii;1868,6262
+Activision;Call of Duty: Modern Warfare;1799,7
+Activision;Call of Duty: Black Ops;1799,7
+Activision;Call of Duty: Black Ops II;1799,7
+Microsoft;Forza Horizon 5;1799,7
+Bungie;Destiny 2;1799,7
+Warner Bros;Hogwarts Legacy;1679,76
+Nintendo;Super Mario Odyssey;1658,7235
+Nintendo;Wii Sports Resort;1656,6686
+Nintendo;Pokemon Sword/Shield;1560,9398
+Nintendo;New Super Mario Bros. Wii;1515,6968
+Rockstar Games;Grand Theft Auto IV;1499,75
+EA;Battlefield 1;1499,75
+CD Projekt;Cyberpunk 2077;1499,75
+Bethesda;Fallout 4;1499,75
+Activision;Call of Duty: Modern Warfare 2;1499,75
+Bungie;Destiny;1499,75
+EA Sports;FIFA 18;1439,76
+Microsoft;Forza Horizon 4;1439,76
+Nintendo;The Legend of Zelda: Tears of the Kingdom;1419,3972
+Rockstar Games;Red Dead Redemption;1379,77
+Bandai Namco;Elden Ring;1379,77
+Sony;God of War;1379,77
+Capcom;Monster Hunter: World;1379,77
+Rockstar Games;Grand Theft Auto: San Andreas;1374,725
+Nintendo;New Super Mario Bros.;1231,692
+Ubisoft;Assassin's Creed Valhalla;1199,8
+Sony;Horizon Zero Dawn;1199,76
+Blizzard;Diablo III;1199,7
+Sony;God of War Ragnarok;1049,85
+Nintendo;Super Mario World;1030,2939
+Valve;Team Fortress 2;999,5
+Epic Games;Fall Guys;999,5
+Sony;Uncharted 4: A Thief's End;959,84
+Square Enix;Final Fantasy XIV;959,76
+Nintendo;Pokemon Red/Blue;941,0862
+EA;Battlefield 4;899,85
+Warner Bros;Mortal Kombat 11;899,85
+Ubisoft;Assassin's Creed IV: Black Flag;899,85
+Nintendo;Super Mario Bros. 3;899,82
+Rockstar Games;Grand Theft Auto: Vice City;874,825
+Microsoft;Halo 3;869,855
+Blizzard;Diablo IV;839,88
+EA;Need for Speed: Most Wanted;799,84
+Psyonix;Rocket League;799,6
+Capcom;Resident Evil 2 (Remake);785,869
+Nintendo;Super Mario 3D World;779,87
+Sony;Ghost of Tsushima;779,87
+Capcom;Monster Hunter Rise;779,87
+Capcom;Street Fighter II;774,845
+Sony;Gran Turismo 3: A-Spec;744,3511
+Bethesda;Fallout 3;743,876
+Rockstar Games;Grand Theft Auto III;724,855
+Square Enix;Tomb Raider;724,855
+Warner Bros;Mortal Kombat X;719,88
+Capcom;Resident Evil 7: Biohazard;719,88
+Nintendo;Pokemon Gold/Silver;711,6627
+Nintendo;Pokemon Diamond/Pearl;706,6233
+Square;Final Fantasy VII;704,859
+Sony;Marvel's Spider-Man 2;699,9
+Bethesda;Fallout: New Vegas;695,884
+Nintendo;Super Smash Bros. Brawl;665,8668
+2K Games;BioShock Infinite;659,89
+Nintendo;Pokemon X/Y;659,4351
+Nintendo;Pokemon Sun/Moon;651,4371
+Nintendo;Pokemon Ruby/Sapphire;648,6378
+Nintendo;Super Mario Galaxy;639,872
+Warner Bros;Batman: Arkham City;624,875
+Capcom;Resident Evil 4;614,877
+Activision;Sekiro: Shadows Die Twice;599,9
+Bandai Namco;Dark Souls III;599,9
+Sony;The Last of Us Part II;599,9
+Square Enix;Final Fantasy XV;599,9
+Ubisoft;Assassin's Creed Origins;599,9
+Ubisoft;Assassin's Creed Odyssey;599,9
+Valve;Half-Life 2;599,88
+Valve;Counter-Strike: Global Offensive;599,6
+Nintendo;Super Mario 64;595,3809
+Sony;Horizon Forbidden West;587,916
+Microsoft;Halo: Reach;587,902
+Sony;Gran Turismo 4;587,8824
+Bethesda;The Elder Scrolls IV: Oblivion;569,905
+Blizzard;World of Warcraft;559,86
+Valve;Left 4 Dead 2;549,89
+Atlus;Persona 5;539,91
+Ubisoft;Assassin's Creed II;539,91
+2K Games;Borderlands 2;539,73
+Bandai Namco;Tekken 7;499,9
+EA;Tetris (Mobile);499
+Capcom;Resident Evil Village;497,917
+Capcom;Resident Evil 3 (Remake);479,92
+Square;Final Fantasy VIII;479,904
+Square Enix;NieR: Automata;449,925
+ConcernedApe;Stardew Valley;449,7
+Sony;Bloodborne;443,926
+Blizzard;StarCraft;439,89
+Re-Logic;Terraria;439,56
+Nintendo;The Legend of Zelda: Twilight Princess;428,9142
+Namco;Tekken 3;424,915
+Square;Final Fantasy X;424,915
+Microsoft;Halo 2;422,9154
+Capcom;Street Fighter V;419,93
+Sony;Uncharted 3: Drake's Deception;395,934
+Sony;Uncharted 2: Among Thieves;389,935
+Nintendo;The Legend of Zelda: Ocarina of Time;379,924
+EA;Mass Effect 3;359,94
+Blizzard;StarCraft II: Wings of Liberty;359,94
+Nintendo;Super Smash Bros. Melee;354,4291
+CD Projekt;The Witcher 2: Assassins of Kings;319,92
+Nintendo;Super Mario Sunshine;313,9372
+EA;Mass Effect 2;299,95
+Microsoft;Halo: Combat Evolved;274,945
+Motion Twin;Dead Cells;249,9
+Innersloth;Among Us;249,5
+Rockstar Games;Max Payne 3;239,96
+Nintendo;The Legend of Zelda: The Wind Waker;229,954
+Bethesda;The Elder Scrolls III: Morrowind;199,96
+2K Games;BioShock;199,96
+Valve;Portal 2;199,96
+Bandai Namco;Dark Souls;199,95
+Capcom;Street Fighter 6;179,97
+Nintendo;The Legend of Zelda: Majora's Mask;167,9664
+Blizzard;Diablo II;159,96
+Rockstar Games;Bully;149,97
+Bandai Namco;Tekken 8;139,98
+Square;Chrono Trigger;124,975
+Sony;Demon's Souls;99,98
+Supergiant Games;Hades;49,98
+Team Cherry;Hollow Knight;44,97
+tobyfox;Undertale;29,97
+Maddy Makes Games;Celeste;19,99
+EA;Apex Legends;0
+Activision;Call of Duty: Warzone;0
+Epic Games;Fortnite;0

@@ -16,7 +16,7 @@ namespace jatekok
         public DateTime Megjelenesi_Datum { get; private set; }
         public string Platform { get; private set; }
         public double Ar { get; private set; }
-        public int Eladott_db { get; private set; }
+        public double Eladott_db { get; private set; }
         public int Ertekeles { get; private set; }
 
         public Jatekok(string sor)
@@ -28,14 +28,14 @@ namespace jatekok
             Mufaj = String_atalakito(tpm[3]);
             Megjelenesi_Datum = DateTime_atalakito(tpm[4]);
             Platform = String_atalakito(tpm[5]);
-            Ar = Double_Atalakito(tpm[6]);
-            Eladott_db = Int_atalakito(tpm[7]);
+            Ar = Double_atalakito(tpm[6]);
+            Eladott_db = Double_atalakito(tpm[7]);
             Ertekeles = Int_atalakito(tpm[8]);
 
 
 
         }
-        public double Double_Atalakito(string be)
+        public double Double_atalakito(string be)
         {
             double ki;
             char elvalaszto = ' ';
