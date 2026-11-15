@@ -1,0 +1,151 @@
+game_id,Name,Publisher_id,Genre,Release Date,Platform,Retail Price,Sold Units,Rating
+1,Minecraft,1,Sandbox,2011-11-18,Multi-platform,29.99,300000000,93
+2,Grand Theft Auto V,2,Action-adventure,2013-09-17,Multi-platform,59.99,195000000,97
+3,Tetris (Mobile),3,Puzzle,2006-09-12,Mobile,4.99,100000000,80
+4,Wii Sports,4,Sports,2006-11-19,Wii,49.99,82900000,76
+5,PUBG: Battlegrounds,5,Battle Royale,2017-12-20,Multi-platform,29.99,75000000,86
+6,Mario Kart 8 Deluxe,4,Kart racing,2017-04-28,Nintendo Switch,59.99,60580000,92
+7,Super Mario Bros.,4,Platformer,1985-09-13,NES,49.99,58000000,95
+8,Red Dead Redemption 2,2,Action-adventure,2018-10-26,Multi-platform,59.99,61000000,97
+9,The Witcher 3: Wild Hunt,6,Action RPG,2015-05-19,Multi-platform,39.99,50000000,93
+10,Overwatch,7,Hero Shooter,2016-05-24,Multi-platform,39.99,50000000,91
+11,Terraria,8,Sandbox,2011-05-16,Multi-platform,9.99,44000000,83
+12,Animal Crossing: New Horizons,4,Simulation,2020-03-20,Nintendo Switch,59.99,44790000,90
+13,Mario Kart Wii,4,Kart racing,2008-04-10,Wii,49.99,37380000,82
+14,The Elder Scrolls V: Skyrim,9,Action RPG,2011-11-11,Multi-platform,39.99,60000000,94
+15,Diablo III,7,Action RPG,2012-05-15,Multi-platform,39.99,30000000,88
+16,Super Smash Bros. Ultimate,4,Fighting,2018-12-07,Nintendo Switch,59.99,33670000,93
+17,The Legend of Zelda: Breath of the Wild,4,Action-adventure,2017-03-03,Nintendo Switch,59.99,31610000,97
+18,Super Mario World,4,Platformer,1990-11-21,SNES,49.99,20610000,94
+19,Call of Duty: Modern Warfare,10,Shooter,2019-10-25,Multi-platform,59.99,30000000,81
+20,Cyberpunk 2077,6,Action RPG,2020-12-10,Multi-platform,59.99,25000000,86
+21,Stardew Valley,11,Simulation,2016-02-26,Multi-platform,14.99,30000000,89
+22,Hogwarts Legacy,12,Action RPG,2023-02-10,Multi-platform,69.99,24000000,84
+23,Elden Ring,13,Action RPG,2022-02-25,Multi-platform,59.99,23000000,96
+24,Super Mario Odyssey,4,Platformer,2017-10-27,Nintendo Switch,59.99,27650000,97
+25,Borderlands 2,14,Shooter,2012-09-18,Multi-platform,19.99,27000000,89
+26,Pokemon Red/Blue,4,RPG,1996-02-27,Game Boy,29.99,31380000,89
+27,Grand Theft Auto: San Andreas,2,Action-adventure,2004-10-26,PS2,49.99,27500000,95
+28,Super Mario 64,4,Platformer,1996-06-23,N64,49.99,11910000,94
+29,Call of Duty: Black Ops,10,Shooter,2010-11-09,Multi-platform,59.99,30000000,88
+30,FIFA 18,15,Sports,2017-09-29,Multi-platform,59.99,24000000,84
+31,Wii Sports Resort,4,Sports,2009-06-25,Wii,49.99,33140000,80
+32,Super Mario Sunshine,4,Platformer,2002-07-19,GameCube,49.99,6280000,92
+33,Grand Theft Auto: Vice City,2,Action-adventure,2002-10-29,PS2,49.99,17500000,95
+34,Fallout 4,9,Action RPG,2015-11-10,Multi-platform,59.99,25000000,87
+35,God of War,16,Action-adventure,2018-04-20,PS4,59.99,23000000,94
+36,Marvel's Spider-Man,16,Action-adventure,2018-09-07,PS4,59.99,33000000,87
+37,Horizon Zero Dawn,16,Action RPG,2017-02-28,PS4,49.99,24000000,89
+38,Super Mario Galaxy,4,Platformer,2007-11-01,Wii,49.99,12800000,97
+39,The Last of Us,16,Action-adventure,2013-06-14,PS3,59.99,37000000,95
+40,Ghost of Tsushima,16,Action-adventure,2020-07-17,PS4,59.99,13000000,83
+41,Halo 3,17,Shooter,2007-09-25,Xbox 360,59.99,14500000,94
+42,Counter-Strike: Global Offensive,18,Shooter,2012-08-21,PC,14.99,40000000,83
+43,Team Fortress 2,18,Shooter,2007-10-10,PC,19.99,50000000,92
+44,Portal 2,18,Puzzle,2011-04-18,Multi-platform,49.99,4000000,95
+45,Half-Life 2,18,Shooter,2004-11-16,PC,49.99,12000000,96
+46,Left 4 Dead 2,18,Shooter,2009-11-17,Multi-platform,49.99,11000000,89
+47,The Legend of Zelda: Ocarina of Time,4,Action-adventure,1998-11-21,N64,49.99,7600000,99
+48,The Legend of Zelda: Tears of the Kingdom,4,Action-adventure,2023-05-12,Nintendo Switch,69.99,20280000,96
+49,Pokemon Gold/Silver,4,RPG,1999-11-21,Game Boy Color,29.99,23730000,89
+50,Pokemon Sword/Shield,4,RPG,2019-11-15,Nintendo Switch,59.99,26020000,80
+51,Super Mario 3D World,4,Platformer,2013-11-21,Wii U,59.99,13000000,93
+52,Super Smash Bros. Melee,4,Fighting,2001-11-21,GameCube,49.99,7090000,92
+53,Super Smash Bros. Brawl,4,Fighting,2008-01-31,Wii,49.99,13320000,93
+54,Call of Duty: Modern Warfare 2,10,Shooter,2009-11-10,Multi-platform,59.99,25000000,94
+55,Call of Duty: Black Ops II,10,Shooter,2012-11-12,Multi-platform,59.99,30000000,83
+56,Call of Duty: Warzone,10,Battle Royale,2020-03-10,Multi-platform,0.0,100000000,79
+57,Battlefield 1,3,Shooter,2016-10-21,Multi-platform,59.99,25000000,88
+58,Battlefield 4,3,Shooter,2013-10-29,Multi-platform,59.99,15000000,81
+59,Destiny 2,19,Shooter,2017-09-06,Multi-platform,59.99,30000000,85
+60,Apex Legends,3,Battle Royale,2019-02-04,Multi-platform,0.0,100000000,89
+61,Fortnite,20,Battle Royale,2017-07-25,Multi-platform,0.0,400000000,81
+62,Rocket League,21,Sports,2015-07-07,Multi-platform,19.99,40000000,86
+63,Among Us,22,Social Deduction,2018-06-15,Multi-platform,4.99,50000000,85
+64,Fall Guys,20,Battle Royale,2020-08-04,Multi-platform,19.99,50000000,81
+65,The Sims 4,3,Simulation,2014-09-02,Multi-platform,39.99,70000000,70
+66,BioShock,14,Shooter,2007-08-21,Multi-platform,49.99,4000000,96
+67,BioShock Infinite,14,Shooter,2013-03-26,Multi-platform,59.99,11000000,94
+68,Mass Effect 2,3,Action RPG,2010-01-26,Multi-platform,59.99,5000000,96
+69,Mass Effect 3,3,Action RPG,2012-03-06,Multi-platform,59.99,6000000,93
+70,Batman: Arkham City,12,Action-adventure,2011-10-18,Multi-platform,49.99,12500000,96
+71,Tomb Raider,23,Action-adventure,2013-03-05,Multi-platform,49.99,14500000,86
+72,Monster Hunter: World,24,Action RPG,2018-01-26,Multi-platform,59.99,23000000,90
+73,Monster Hunter Rise,24,Action RPG,2021-03-26,Multi-platform,59.99,13000000,88
+74,Street Fighter II,24,Fighting,1991-02-06,Arcade,49.99,15500000,93
+75,Mortal Kombat 11,12,Fighting,2019-04-23,Multi-platform,59.99,15000000,82
+76,Tekken 7,13,Fighting,2015-03-18,Multi-platform,49.99,10000000,82
+77,Tekken 3,25,Fighting,1997-03-20,PS1,49.99,8500000,96
+78,Persona 5,26,RPG,2016-09-15,PS3/PS4,59.99,9000000,93
+79,Final Fantasy VII,27,RPG,1997-01-31,PS1,49.99,14100000,92
+80,Final Fantasy XIV,23,MMORPG,2013-08-27,Multi-platform,39.99,24000000,86
+81,Gran Turismo 3: A-Spec,16,Racing,2001-04-28,PS2,49.99,14890000,95
+82,Gran Turismo 4,16,Racing,2004-12-28,PS2,49.99,11760000,89
+83,Forza Horizon 4,17,Racing,2018-09-28,Multi-platform,59.99,24000000,92
+84,Forza Horizon 5,17,Racing,2021-11-05,Multi-platform,59.99,30000000,92
+85,Need for Speed: Most Wanted,3,Racing,2005-11-11,Multi-platform,49.99,16000000,83
+86,Assassin's Creed II,28,Action-adventure,2009-11-17,Multi-platform,59.99,9000000,91
+87,Assassin's Creed IV: Black Flag,28,Action-adventure,2013-10-29,Multi-platform,59.99,15000000,88
+88,Assassin's Creed Valhalla,28,Action RPG,2020-11-10,Multi-platform,59.99,20000000,80
+89,Resident Evil 4,24,Survival Horror,2005-01-11,GameCube,49.99,12300000,96
+90,Resident Evil 2 (Remake),24,Survival Horror,2019-01-25,Multi-platform,59.99,13100000,91
+91,Resident Evil Village,24,Survival Horror,2021-05-01,Multi-platform,59.99,8300000,84
+92,Hollow Knight,29,Metroidvania,2017-02-24,Multi-platform,14.99,3000000,90
+93,Hades,30,Roguelike,2020-09-17,Multi-platform,24.99,2000000,93
+94,Celeste,31,Platformer,2018-01-25,Multi-platform,19.99,1000000,92
+95,Undertale,32,RPG,2015-09-15,Multi-platform,9.99,3000000,92
+96,Dead Cells,33,Roguelike,2018-08-07,Multi-platform,24.99,10000000,89
+97,Sekiro: Shadows Die Twice,10,Action-adventure,2019-03-22,Multi-platform,59.99,10000000,90
+98,Bloodborne,16,Action RPG,2015-03-24,PS4,59.99,7400000,92
+99,Dark Souls III,13,Action RPG,2016-03-24,Multi-platform,59.99,10000000,89
+100,Dark Souls,13,Action RPG,2011-09-22,Multi-platform,39.99,5000000,89
+101,Demon's Souls,16,Action RPG,2009-02-05,PS3,49.99,2000000,89
+102,Super Mario Bros. 3,4,Platformer,1988-10-23,NES,49.99,18000000,97
+103,New Super Mario Bros.,4,Platformer,2006-05-15,DS,39.99,30800000,89
+104,New Super Mario Bros. Wii,4,Platformer,2009-11-11,Wii,49.99,30320000,87
+105,The Legend of Zelda: The Wind Waker,4,Action-adventure,2002-12-13,GameCube,49.99,4600000,96
+106,The Legend of Zelda: Twilight Princess,4,Action-adventure,2006-11-19,Wii,49.99,8580000,95
+107,The Legend of Zelda: Majora's Mask,4,Action-adventure,2000-04-27,N64,49.99,3360000,95
+108,Pokemon Ruby/Sapphire,4,RPG,2002-11-21,GBA,39.99,16220000,82
+109,Pokemon Diamond/Pearl,4,RPG,2006-09-28,DS,39.99,17670000,85
+110,Pokemon Sun/Moon,4,RPG,2016-11-18,3DS,39.99,16290000,87
+111,Pokemon X/Y,4,RPG,2013-10-12,3DS,39.99,16490000,87
+112,Grand Theft Auto III,2,Action-adventure,2001-10-22,PS2,49.99,14500000,97
+113,Grand Theft Auto IV,2,Action-adventure,2008-04-29,Multi-platform,59.99,25000000,98
+114,Red Dead Redemption,2,Action-adventure,2010-05-18,Multi-platform,59.99,23000000,95
+115,Bully,2,Action-adventure,2006-10-17,PS2,49.99,3000000,87
+116,Max Payne 3,2,Shooter,2012-05-15,Multi-platform,59.99,4000000,87
+117,Fallout 3,9,Action RPG,2008-10-28,Multi-platform,59.99,12400000,91
+118,Fallout: New Vegas,9,Action RPG,2010-10-19,Multi-platform,59.99,11600000,84
+119,The Elder Scrolls III: Morrowind,9,Action RPG,2002-05-01,Multi-platform,49.99,4000000,89
+120,The Elder Scrolls IV: Oblivion,9,Action RPG,2006-03-20,Multi-platform,59.99,9500000,94
+121,Uncharted 2: Among Thieves,16,Action-adventure,2009-10-13,PS3,59.99,6500000,96
+122,Uncharted 3: Drake's Deception,16,Action-adventure,2011-11-01,PS3,59.99,6600000,92
+123,Uncharted 4: A Thief's End,16,Action-adventure,2016-05-10,PS4,59.99,16000000,93
+124,The Last of Us Part II,16,Action-adventure,2020-06-19,PS4,59.99,10000000,93
+125,God of War Ragnarok,16,Action-adventure,2022-11-09,PS4/PS5,69.99,15000000,94
+126,Marvel's Spider-Man 2,16,Action-adventure,2023-10-20,PS5,69.99,10000000,90
+127,Horizon Forbidden West,16,Action RPG,2022-02-18,PS4/PS5,69.99,8400000,88
+128,Halo: Combat Evolved,17,Shooter,2001-11-15,Xbox,49.99,5500000,97
+129,Halo 2,17,Shooter,2004-11-09,Xbox,49.99,8460000,95
+130,Halo: Reach,17,Shooter,2010-09-14,Xbox 360,59.99,9800000,91
+131,Diablo II,7,Action RPG,2000-06-29,PC,39.99,4000000,88
+132,Diablo IV,7,Action RPG,2023-06-05,Multi-platform,69.99,12000000,86
+133,StarCraft,7,RTS,1998-03-31,PC,39.99,11000000,88
+134,StarCraft II: Wings of Liberty,7,RTS,2010-07-27,PC,59.99,6000000,93
+135,World of Warcraft,7,MMORPG,2004-11-23,PC,39.99,14000000,93
+136,The Witcher 2: Assassins of Kings,6,Action RPG,2011-05-17,Multi-platform,39.99,8000000,88
+137,Street Fighter V,24,Fighting,2016-02-16,Multi-platform,59.99,7000000,77
+138,Street Fighter 6,24,Fighting,2023-06-02,Multi-platform,59.99,3000000,92
+139,Mortal Kombat X,12,Fighting,2015-04-14,Multi-platform,59.99,12000000,83
+140,Tekken 8,13,Fighting,2024-01-26,Multi-platform,69.99,2000000,90
+141,Final Fantasy VIII,27,RPG,1999-02-11,PS1,49.99,9600000,90
+142,Final Fantasy X,27,RPG,2001-07-19,PS2,49.99,8500000,92
+143,Final Fantasy XV,23,Action RPG,2016-11-29,Multi-platform,59.99,10000000,81
+144,NieR: Automata,23,Action RPG,2017-02-23,Multi-platform,59.99,7500000,88
+145,Chrono Trigger,27,RPG,1995-03-11,SNES,49.99,2500000,92
+146,Assassin's Creed Origins,28,Action RPG,2017-10-27,Multi-platform,59.99,10000000,81
+147,Assassin's Creed Odyssey,28,Action RPG,2018-10-05,Multi-platform,59.99,10000000,83
+148,Resident Evil 3 (Remake),24,Survival Horror,2020-04-03,Multi-platform,59.99,8000000,79
+149,Resident Evil 7: Biohazard,24,Survival Horror,2017-01-24,Multi-platform,59.99,12000000,86
+150,Destiny,19,Shooter,2014-09-09,Multi-platform,59.99,25000000,76
