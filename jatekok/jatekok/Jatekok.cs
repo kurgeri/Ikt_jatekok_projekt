@@ -17,25 +17,93 @@ namespace jatekok
         public string Platform { get; private set; }
         public double Ar { get; private set; }
         public int Eladott_db { get; private set; }
-        public byte Ertekeles { get; private set; }
-        public Kiadok Kiado { get; private set; }
+        public int Ertekeles { get; private set; }
 
-        public Jatekok(string sor, Kiadok k)
+        public Jatekok(string sor)
         {
             string[] tpm = sor.Split(',');
-            Jatek_id = Convert.ToInt32(tpm[0]);
-            Jatek_nev = tpm[1];
-            Kiado_id = Convert.ToInt32(tpm[2]);
-            Mufaj = tpm[3];
-            Megjelenesi_Datum = Convert.ToDateTime(tpm[4]);
-            Platform = tpm[5];
-            Ar = Convert.ToDouble(tpm[6].Replace('.', ','));
-            Eladott_db = Convert.ToInt32(tpm[7]);
-            Ertekeles = Convert.ToByte(tpm[8]);
-            Kiado = k;
+            Jatek_id = Int_atalakito(tpm[0]);
+            Jatek_nev = String_atalakito(tpm[1]);
+            Kiado_id = Int_atalakito(tpm[2]);
+            Mufaj = String_atalakito(tpm[3]);
+            Megjelenesi_Datum = DateTime_atalakito(tpm[4]);
+            Platform = String_atalakito(tpm[5]);
+            Ar = Double_Atalakito(tpm[6]);
+            Eladott_db = Int_atalakito(tpm[7]);
+            Ertekeles = Int_atalakito(tpm[8]);
 
 
 
+        }
+        public double Double_Atalakito(string be)
+        {
+            double ki;
+            char elvalaszto = ' ';
+            int seged;
+            for (int i = 0; i < be.Length; i++)
+            {
+            
+                try
+                {
+                    seged = Convert.ToInt32(Convert.ToString(be[i]));
+        
+                }
+                catch
+                {
+                    elvalaszto = be[i];
+                    
+                }
+            }
+
+            try
+            {
+                ki = Convert.ToDouble(be.Replace(elvalaszto, ','));
+            }
+            catch
+            {
+                ki = -0.1;
+            }
+            return ki;
+        }
+        public DateTime DateTime_atalakito(string be)
+        {
+            DateTime ki;
+            try
+            {
+                ki = Convert.ToDateTime(be);
+            }
+            catch
+            {
+                ki = new DateTime(1, 1, 1, 1, 1, 0);
+            }
+            return ki;
+        }
+        public string String_atalakito(string be)
+        {
+            string ki;
+            try
+            {
+                ki = be;
+            }
+            catch
+            {
+                ki = string.Empty;
+            }
+            return ki;
+        }
+
+        public int Int_atalakito(string be)
+        {
+            int ki;
+            try
+            {
+                ki = Convert.ToInt32(be);
+            }
+            catch
+            {
+                ki = 0;
+            }
+            return ki;
         }
 
         public double Bevetel()
@@ -45,7 +113,7 @@ namespace jatekok
 
         public override string ToString()
         {
-            return $"Játék_neve:{Jatek_nev} Kiadó: {Kiado.Kiado_nev} Múfaj: {Mufaj} Megj.Dát.:{Megjelenesi_Datum.ToString("yyyy.MM_:dd")} Platform: {Platform} Ár:{Ar.ToString("f2")}$ Értékelés:100/{Ertekeles}";
+            return $"Név:{Jatek_nev} Műfaj: {Mufaj} Megj.Dát.:{Megjelenesi_Datum.ToString("yyyy.MM_:dd")} Platform: {Platform} Ár:{Ar.ToString("f2")}$ Értékelés:100/{Ertekeles}";
            
         }
     }

@@ -19,15 +19,7 @@ namespace jatekok
             List<Jatekok> jatekok_lista = new List<Jatekok>();
             foreach (string sor in File.ReadAllLines("videogames.csv").Skip(1))
             {
-                string[] tpm = sor.Split(',');
-                foreach (Kiadok k in kiadok_lista)
-                {
-                    if (k.Kiado_id == Convert.ToInt32(tpm[2]))
-                    {
-                        jatekok_lista.Add(new Jatekok(sor, k));
-                    }
-                }
-
+                jatekok_lista.Add(new Jatekok(sor));
             }
 
 
@@ -39,7 +31,7 @@ namespace jatekok
         {
             Console.Clear();
             Console.WriteLine("Üdvözlöm!\nMit szeretne megtekinteni?");
-            Console.Write("K: Keresés játékra\nSz: Szűrés\nKi: Kilépés\n:");
+            Console.Write("K: Keresés játékra\nSz: Szűrés\nA: Adatok\nKi: Kilépés\n:");
             string bekert = string.Empty;
             do {
                 bekert = Console.ReadLine().ToUpper();
@@ -52,6 +44,9 @@ namespace jatekok
                     case "SZ":
                         Szures(j_lista, k_lista);
                         break;
+                    case "A":
+                        Adatok(j_lista, k_lista);
+                        break;
                     case "KI":
                         Kilepes();
                         break;
@@ -61,7 +56,7 @@ namespace jatekok
                         Menu(j_lista, k_lista);
                         break;
                 }
-            } while (bekert != "K" || bekert != "SZ" || bekert != "KI");
+            } while (bekert != "K" || bekert != "SZ" || bekert != "KI" ||bekert != "A");
 
 
         }
@@ -127,10 +122,27 @@ namespace jatekok
         }
         static void Szures(List<Jatekok> j_lista, List<Kiadok> k_lista)
         {
-            Console.Clear();
+          
 
 
         }
+
+        static void Adatok(List<Jatekok> j_lista, List<Kiadok> k_lista)
+        {
+            Console.Clear();
+            Console.WriteLine("Néhány általános adat:");
+            Console.WriteLine($"Játékok lista hossza:{j_lista.Count()}\nKiadók lista hossza: {k_lista.Count()}");
+            int atlagalkalmazott = Convert.ToInt32(Math.Floor(k_lista.Average(x => x.Alkamazottak_db)));
+            Console.WriteLine($"Átlagos alkalmazott létszám cégenként: {atlagalkalmazott}\nÁtlag alatti cégek száma:{k_lista.Where(x=>x.Alkamazottak_db < atlagalkalmazott).ToList().Count()}");
+            Console.Write($"Van-e solo fejlesztő? \t");
+            Console.WriteLine(k_lista.Any(x => x.Alkamazottak_db == 1) ? "Igen, van!" : "Nem, nincs");
+
+
+            Console.Write("Nyomjon meg egy gombot, hogy visszamenjen a menübe");
+            Console.ReadKey();
+            Menu(j_lista, k_lista);
+        }
+
         static void Kilepes()
         {
             Console.Clear();
