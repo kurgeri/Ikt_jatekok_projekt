@@ -109,7 +109,7 @@ namespace jatekok
                                 break;
                         }
 
-                    } while (opcio != 'N' || opcio != 'I');
+                    } while (opcio != 'N' && opcio != 'I');
 
                 }
             } while (bennevan_e == false);
@@ -269,6 +269,7 @@ namespace jatekok
         {
             Console.Clear();
             Console.WriteLine("Viszontlátásra!");
+            Environment.Exit(0);
          
         }
     }
