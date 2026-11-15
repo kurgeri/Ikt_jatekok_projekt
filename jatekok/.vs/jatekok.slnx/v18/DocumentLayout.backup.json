@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Gergo\\Desktop\\MINDEN\\Suli\\2026-2027_tanev\\2026-2027\\C#\\IKT\\I.projekt\\jatekok\\",
+  "WorkspaceRootPath": "C:\\Users\\Gergo\\Desktop\\MINDEN\\Suli\\2026-2027_tanev\\2026-2027\\C#\\IKT\\I.projekt\\Ikt_jatekok_projekt\\jatekok\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52C78201-4317-4743-9C34-68AE7B6847C1}|jatekok\\jatekok.csproj|c:\\users\\gergo\\desktop\\minden\\suli\\2026-2027_tanev\\2026-2027\\c#\\ikt\\i.projekt\\jatekok\\jatekok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{52C78201-4317-4743-9C34-68AE7B6847C1}|jatekok\\jatekok.csproj|C:\\Users\\Gergo\\Desktop\\MINDEN\\Suli\\2026-2027_tanev\\2026-2027\\C#\\IKT\\I.projekt\\Ikt_jatekok_projekt\\jatekok\\jatekok\\jatekok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C78201-4317-4743-9C34-68AE7B6847C1}|jatekok\\jatekok.csproj|solutionrelative:jatekok\\jatekok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C78201-4317-4743-9C34-68AE7B6847C1}|jatekok\\jatekok.csproj|c:\\users\\gergo\\desktop\\minden\\suli\\2026-2027_tanev\\2026-2027\\c#\\ikt\\i.projekt\\ikt_jatekok_projekt\\jatekok\\jatekok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52C78201-4317-4743-9C34-68AE7B6847C1}|jatekok\\jatekok.csproj|solutionrelative:jatekok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C78201-4317-4743-9C34-68AE7B6847C1}|jatekok\\jatekok.csproj|C:\\Users\\Gergo\\Desktop\\MINDEN\\Suli\\2026-2027_tanev\\2026-2027\\C#\\IKT\\I.projekt\\Ikt_jatekok_projekt\\jatekok\\jatekok\\kiadok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C78201-4317-4743-9C34-68AE7B6847C1}|jatekok\\jatekok.csproj|solutionrelative:jatekok\\kiadok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +27,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Jatekok.cs",
+              "DocumentMoniker": "C:\\Users\\Gergo\\Desktop\\MINDEN\\Suli\\2026-2027_tanev\\2026-2027\\C#\\IKT\\I.projekt\\Ikt_jatekok_projekt\\jatekok\\jatekok\\Jatekok.cs",
+              "RelativeDocumentMoniker": "jatekok\\Jatekok.cs",
+              "ToolTip": "C:\\Users\\Gergo\\Desktop\\MINDEN\\Suli\\2026-2027_tanev\\2026-2027\\C#\\IKT\\I.projekt\\Ikt_jatekok_projekt\\jatekok\\jatekok\\Jatekok.cs",
+              "RelativeToolTip": "jatekok\\Jatekok.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwC8AAAC2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-15T10:35:51.464Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Gergo\\Desktop\\MINDEN\\Suli\\2026-2027_tanev\\2026-2027\\C#\\IKT\\I.projekt\\jatekok\\jatekok\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Gergo\\Desktop\\MINDEN\\Suli\\2026-2027_tanev\\2026-2027\\C#\\IKT\\I.projekt\\Ikt_jatekok_projekt\\jatekok\\jatekok\\Program.cs",
               "RelativeDocumentMoniker": "jatekok\\Program.cs",
-              "ToolTip": "C:\\Users\\Gergo\\Desktop\\MINDEN\\Suli\\2026-2027_tanev\\2026-2027\\C#\\IKT\\I.projekt\\jatekok\\jatekok\\Program.cs",
+              "ToolTip": "C:\\Users\\Gergo\\Desktop\\MINDEN\\Suli\\2026-2027_tanev\\2026-2027\\C#\\IKT\\I.projekt\\Ikt_jatekok_projekt\\jatekok\\jatekok\\Program.cs",
               "RelativeToolTip": "jatekok\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAUwFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-15T09:26:29.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Kiadok.cs",
+              "DocumentMoniker": "C:\\Users\\Gergo\\Desktop\\MINDEN\\Suli\\2026-2027_tanev\\2026-2027\\C#\\IKT\\I.projekt\\Ikt_jatekok_projekt\\jatekok\\jatekok\\Kiadok.cs",
+              "RelativeDocumentMoniker": "jatekok\\Kiadok.cs",
+              "ToolTip": "C:\\Users\\Gergo\\Desktop\\MINDEN\\Suli\\2026-2027_tanev\\2026-2027\\C#\\IKT\\I.projekt\\Ikt_jatekok_projekt\\jatekok\\jatekok\\Kiadok.cs",
+              "RelativeToolTip": "jatekok\\Kiadok.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-15T10:36:31.286Z",
               "EditorCaption": ""
             }
           ]

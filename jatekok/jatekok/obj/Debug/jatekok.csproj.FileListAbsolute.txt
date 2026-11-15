@@ -1,0 +1,7 @@
+C:\Users\Gergo\Desktop\MINDEN\Suli\2026-2027_tanev\2026-2027\C#\IKT\I.projekt\Ikt_jatekok_projekt\jatekok\jatekok\bin\Debug\jatekok.exe.config
+C:\Users\Gergo\Desktop\MINDEN\Suli\2026-2027_tanev\2026-2027\C#\IKT\I.projekt\Ikt_jatekok_projekt\jatekok\jatekok\bin\Debug\jatekok.exe
+C:\Users\Gergo\Desktop\MINDEN\Suli\2026-2027_tanev\2026-2027\C#\IKT\I.projekt\Ikt_jatekok_projekt\jatekok\jatekok\bin\Debug\jatekok.pdb
+C:\Users\Gergo\Desktop\MINDEN\Suli\2026-2027_tanev\2026-2027\C#\IKT\I.projekt\Ikt_jatekok_projekt\jatekok\jatekok\obj\Debug\jatekok.csproj.AssemblyReference.cache
+C:\Users\Gergo\Desktop\MINDEN\Suli\2026-2027_tanev\2026-2027\C#\IKT\I.projekt\Ikt_jatekok_projekt\jatekok\jatekok\obj\Debug\jatekok.csproj.CoreCompileInputs.cache
+C:\Users\Gergo\Desktop\MINDEN\Suli\2026-2027_tanev\2026-2027\C#\IKT\I.projekt\Ikt_jatekok_projekt\jatekok\jatekok\obj\Debug\jatekok.exe
+C:\Users\Gergo\Desktop\MINDEN\Suli\2026-2027_tanev\2026-2027\C#\IKT\I.projekt\Ikt_jatekok_projekt\jatekok\jatekok\obj\Debug\jatekok.pdb
