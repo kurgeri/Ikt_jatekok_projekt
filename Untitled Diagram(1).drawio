@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0">
   <diagram name="1 oldal" id="THDwMhsGliJdGOJnr_hm">
-    <mxGraphModel dx="734" dy="1099" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1178" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -192,7 +192,7 @@
             <mxRectangle height="30" width="150" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WR0G-7VSx5jboC_HmPxF-64" edge="1" parent="1" source="J3B1i0sQVn2sEGd28VDw-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="WR0G-7VSx5jboC_HmPxF-48">
+        <mxCell id="WR0G-7VSx5jboC_HmPxF-64" edge="1" parent="1" source="J3B1i0sQVn2sEGd28VDw-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="WR0G-7VSx5jboC_HmPxF-48">
           <mxGeometry relative="1" x="-0.1146" as="geometry">
             <mxPoint x="249.9999999999999" y="495" as="sourcePoint" />
           </mxGeometry>
@@ -275,7 +275,7 @@
         <mxCell id="J3B1i0sQVn2sEGd28VDw-49" parent="J3B1i0sQVn2sEGd28VDw-34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Double_atalakito(string): double" vertex="1">
           <mxGeometry height="26" width="270" y="234" as="geometry" />
         </mxCell>
-        <mxCell id="J3B1i0sQVn2sEGd28VDw-44" edge="1" parent="1" source="J3B1i0sQVn2sEGd28VDw-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;labelPadding=0 4;startSize=8;endSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="J3B1i0sQVn2sEGd28VDw-34">
+        <mxCell id="J3B1i0sQVn2sEGd28VDw-44" edge="1" parent="1" source="J3B1i0sQVn2sEGd28VDw-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;labelPadding=0 4;startSize=8;endSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" target="J3B1i0sQVn2sEGd28VDw-34">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>

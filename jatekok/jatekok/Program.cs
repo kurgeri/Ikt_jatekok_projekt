@@ -76,7 +76,7 @@ namespace jatekok
                 {
                     List<Jatekok> jatekok = j_lista.Where(x => x.Jatek_nev.ToLower().StartsWith(bekert)).ToList();
                     Console.WriteLine($"Találatok száma: {jatekok.Count()}");
-                    Console.WriteLine("---------\n---------");
+                    Console.WriteLine("------------------");
                     jatekok.ForEach(x => Console.WriteLine(x));
 
 
@@ -92,7 +92,7 @@ namespace jatekok
                           opcio = Convert.ToChar(Console.ReadLine().ToUpper());
                          }
 
-                        catch (Exception e)
+                        catch
                         {
                             opcio = ' ';
                         }
@@ -126,15 +126,15 @@ namespace jatekok
             Console.Clear();
             Console.WriteLine("Néhány általános adat:");
             Console.WriteLine($"Játékok darab száma:{j_lista.Count()}\nKiadók darab száma: {k_lista.Count()}");
-            Console.WriteLine("---------\n---------");
+            Console.WriteLine("------------------");
             int atlagalkalmazott = Convert.ToInt32(Math.Floor(k_lista.Average(x => x.Alkamazottak_db)));
             Console.WriteLine($"Átlagos alkalmazott létszám cégenként: {atlagalkalmazott}\nÁtlag alatti cégek száma:{k_lista.Where(x=>x.Alkamazottak_db < atlagalkalmazott).ToList().Count()}");
-            Console.WriteLine("---------\n---------");
+            Console.WriteLine("------------------");
             Console.Write($"Van-e solo fejlesztő? \t");
             Console.WriteLine("Nyomjon meg egy gombot a folytatáshoz!");
             Console.ReadKey();
             Console.WriteLine(k_lista.Any(x => x.Alkamazottak_db == 1) ? "Igen, van!" : "Nem, nincs");
-            Console.WriteLine("---------\n---------");
+            Console.WriteLine("------------------");
             var cegek_bevelete_jatekokent = k_lista.Join(j_lista, k => k.Kiado_id, j => j.Kiado_id, (k, j) => new
             {
 
@@ -153,11 +153,11 @@ namespace jatekok
             {
                 Console.WriteLine($"Név:\t{kvp.Key}\tDb:\t  {kvp.Value}");
             }
-            Console.WriteLine("---------\n---------");
+            Console.WriteLine("------------------");
             Console.WriteLine($"Ha kíváncsi, hogy a cégeknek egy adott játék mennyit hozott, tekintse meg a Cegek_bevetele_jatekokent.txt állományt! ");
 
             File.WriteAllLines("Cegek_bevetele_jatekokent.txt", cegek_bevelete_jatekokent.Select(x => x.Kiado_nev + $";{x.Jatek_nev};{x.Bevetel}"));
-            Console.WriteLine("---------\n---------");
+            Console.WriteLine("------------------");
             Console.Write("Nyomjon meg egy gombot, hogy visszamenjen a menübe");
             Console.ReadKey();
             Console.Clear();
@@ -202,7 +202,7 @@ namespace jatekok
                 {
                     beker = Convert.ToChar(Console.ReadLine().ToUpper());
                 }
-                catch (Exception e)
+                catch
                 {
                     beker = 'a';
                 }
@@ -226,20 +226,24 @@ namespace jatekok
         {
             Console.WriteLine("Legdrágább játék(ok):");
 
-            j_lista.Where(x => x.Ar == j_lista.Max(y => y.Ar)).Select(x => $"Játék neve:{x.Jatek_nev};Ár:{x.Ar}$").ToList().ForEach(x => Console.WriteLine(x));
-            Console.WriteLine("---------\n---------");
+            j_lista.Where(x => x.Ar == j_lista.Max(y => y.Ar)).Select(x => $"{x.Jatek_nev} - ${x.Ar}").ToList().ForEach(x => Console.WriteLine(x));
+            Console.WriteLine("------------------");
             Console.WriteLine("Legolcsóbb játék(ok):");
 
-            j_lista.Where(x => x.Ar == j_lista.Min(y => y.Ar)).Select(x => $"Játék neve:{x.Jatek_nev};Ár:{x.Ar}$").ToList().ForEach(x => Console.WriteLine(x));
-            Console.WriteLine("---------\n---------");
-            Console.WriteLine($"Játékok átlag ára: {j_lista.Average(x => x.Ar).ToString("f2")}$\nAz összes játék ára: {j_lista.Sum(x => x.Ar).ToString("f2")}$");
+            j_lista.Where(x => x.Ar == j_lista.Min(y => y.Ar)).Select(x => $"{x.Jatek_nev} - ${x.Ar}").ToList().ForEach(x => Console.WriteLine(x));
+            Console.WriteLine("------------------");
+            Console.WriteLine($"Játékok átlag ára: ${j_lista.Average(x => x.Ar).ToString("f2")}\nAz összes játék ára: ${j_lista.Sum(x => x.Ar).ToString("f2")}");
         }
         static void Szures_Eladott(List<Jatekok> j_lista)
         {
-            Console.WriteLine($"Legtöbbet eladott játék:\n{j_lista.Where(x => x.Eladott_db == j_lista.Max(y => y.Eladott_db)).Select(x => x.Jatek_nev).First()}");
-            Console.WriteLine("---------\n---------");
-            Console.WriteLine($"Legkevesebett eladott játék:\n{j_lista.Where(x => x.Eladott_db == j_lista.Min(y => y.Eladott_db)).Select(x => x.Jatek_nev).First()}");
-            Console.WriteLine("---------\n---------");
+            string legtobbet_eladott_nev = j_lista.Where(x => x.Eladott_db == j_lista.Max(y => y.Eladott_db)).Select(x => x.Jatek_nev).First();
+            double legtobb_db = j_lista.Where(x => x.Eladott_db == j_lista.Max(y => y.Eladott_db)).Select(x => x.Eladott_db).First();
+            Console.WriteLine($"Legtöbbet eladott játék:\n{legtobbet_eladott_nev} Mennyiség: {legtobb_db} millió db");
+            Console.WriteLine("------------------");
+            string legkevesebbet_eladott_nev = j_lista.Where(x => x.Eladott_db == j_lista.Min(y => y.Eladott_db)).Select(x => x.Jatek_nev).First();
+            double legkevesebb_db = j_lista.Where(x => x.Eladott_db == j_lista.Min(y => y.Eladott_db)).Select(x => x.Eladott_db).First();
+            Console.WriteLine($"Legkevesebett eladott játék:\n{legkevesebbet_eladott_nev} Mennyiség: {legkevesebb_db} millió db");
+            Console.WriteLine("------------------");
             double atlag = j_lista.Average(x => x.Eladott_db);
             double ossz = j_lista.Sum(x => x.Eladott_db);
             Console.WriteLine($"Játékok átlag eladása: {atlag.ToString("f2")} millió db\nAz összes játék eladása: {ossz.ToString("f2")} millió db ");
@@ -248,20 +252,20 @@ namespace jatekok
         {
             Console.WriteLine("Legmagasabbra értékelt játék(ok):");
 
-            j_lista.Where(x => x.Ertekeles == j_lista.Max(y => y.Ertekeles)).Select(x => $"Játék neve:{x.Jatek_nev};Értékelés:{x.Ertekeles}").ToList().ForEach(x => Console.WriteLine(x));
-            Console.WriteLine("---------\n---------");
+            j_lista.Where(x => x.Ertekeles == j_lista.Max(y => y.Ertekeles)).Select(x => $"{x.Jatek_nev}; Értékelés:{x.Ertekeles}").ToList().ForEach(x => Console.WriteLine(x));
+            Console.WriteLine("------------------");
             Console.WriteLine("Legalacsonyabbra értékelt játék(ok):");
-            j_lista.Where(x => x.Ertekeles == j_lista.Min(y => y.Ertekeles)).Select(x => $"Játék neve:{x.Jatek_nev};Értékelés:{x.Ertekeles}").ToList().ForEach(x => Console.WriteLine(x));
+            j_lista.Where(x => x.Ertekeles == j_lista.Min(y => y.Ertekeles)).Select(x => $"{x.Jatek_nev}; Értékelés:{x.Ertekeles}").ToList().ForEach(x => Console.WriteLine(x));
 
-            Console.WriteLine("---------\n---------");
+            Console.WriteLine("------------------");
             Console.WriteLine($"Játékok átlag értékelése: 100/{j_lista.Average(x => x.Ertekeles).ToString("f2")}");
         }
         static void Szures_Megjelenes(List<Jatekok> j_lista)
         {
-            Console.WriteLine($"Legfrissebb játék:\n{j_lista.Where(x => x.Megjelenesi_Datum == j_lista.Max(y => y.Megjelenesi_Datum)).Select(x => $"Név:{x.Jatek_nev} Megjelenési idő: {x.Megjelenesi_Datum.ToString("yyyy.MM.dd")}").First()}");
-            Console.WriteLine("---------\n---------");
-            Console.WriteLine($"Legrégebbi játék:\n{j_lista.Where(x => x.Megjelenesi_Datum == j_lista.Min(y => y.Megjelenesi_Datum)).Select(x => $"Név:{x.Jatek_nev} Megjelenési idő: {x.Megjelenesi_Datum.ToString("yyyy.MM.dd")}").First()}");
-            Console.WriteLine("---------\n---------");
+            Console.WriteLine($"Legfrissebb játék:\n{j_lista.Where(x => x.Megjelenesi_Datum == j_lista.Max(y => y.Megjelenesi_Datum)).Select(x => $"{x.Jatek_nev} Megjelenési idő: {x.Megjelenesi_Datum.ToString("yyyy.MM.dd")}").First()}");
+            Console.WriteLine("------------------");
+            Console.WriteLine($"Legrégebbi játék:\n{j_lista.Where(x => x.Megjelenesi_Datum == j_lista.Min(y => y.Megjelenesi_Datum)).Select(x => $"{x.Jatek_nev} Megjelenési idő: {x.Megjelenesi_Datum.ToString("yyyy.MM.dd")}").First()}");
+            Console.WriteLine("------------------");
         }
 
 

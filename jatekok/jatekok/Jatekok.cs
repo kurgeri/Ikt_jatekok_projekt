@@ -113,7 +113,7 @@ namespace jatekok
 
         public override string ToString()
         {
-            return $"Név:{Jatek_nev} Műfaj: {Mufaj} Megj.Dát.:{Megjelenesi_Datum.ToString("yyyy.MM_:dd")} Platform: {Platform} Ár:{Ar.ToString("f2")}$ Értékelés:100/{Ertekeles}";
+            return $"Név: {Jatek_nev}\n\tMűfaj: {Mufaj}\n\tMegj.Dát.: {Megjelenesi_Datum.ToString("yyyy.MM.dd")}\n\tPlatform: {Platform}\n\tÁr: ${Ar.ToString("f2")}\n\tÉrtékelés: 100/{Ertekeles}\n";
            
         }
     }

@@ -5,3 +5,10 @@ C:\Users\Gergo\Desktop\MINDEN\Suli\2026-2027_tanev\2026-2027\C#\IKT\I.projekt\Ik
 C:\Users\Gergo\Desktop\MINDEN\Suli\2026-2027_tanev\2026-2027\C#\IKT\I.projekt\Ikt_jatekok_projekt\jatekok\jatekok\obj\Debug\jatekok.csproj.CoreCompileInputs.cache
 C:\Users\Gergo\Desktop\MINDEN\Suli\2026-2027_tanev\2026-2027\C#\IKT\I.projekt\Ikt_jatekok_projekt\jatekok\jatekok\obj\Debug\jatekok.exe
 C:\Users\Gergo\Desktop\MINDEN\Suli\2026-2027_tanev\2026-2027\C#\IKT\I.projekt\Ikt_jatekok_projekt\jatekok\jatekok\obj\Debug\jatekok.pdb
+J:\2026-2027\C#\IKT\Ikt_jatekok_projekt\jatekok\jatekok\bin\Debug\jatekok.exe.config
+J:\2026-2027\C#\IKT\Ikt_jatekok_projekt\jatekok\jatekok\bin\Debug\jatekok.exe
+J:\2026-2027\C#\IKT\Ikt_jatekok_projekt\jatekok\jatekok\bin\Debug\jatekok.pdb
+J:\2026-2027\C#\IKT\Ikt_jatekok_projekt\jatekok\jatekok\obj\Debug\jatekok.csproj.AssemblyReference.cache
+J:\2026-2027\C#\IKT\Ikt_jatekok_projekt\jatekok\jatekok\obj\Debug\jatekok.csproj.CoreCompileInputs.cache
+J:\2026-2027\C#\IKT\Ikt_jatekok_projekt\jatekok\jatekok\obj\Debug\jatekok.exe
+J:\2026-2027\C#\IKT\Ikt_jatekok_projekt\jatekok\jatekok\obj\Debug\jatekok.pdb
