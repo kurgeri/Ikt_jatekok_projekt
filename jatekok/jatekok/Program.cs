@@ -12,14 +12,25 @@ namespace jatekok
         static void Main(string[] args)
         {
             List<Kiadok> kiadok_lista = new List<Kiadok>();
-            foreach (string sor in File.ReadAllLines("publishers.csv").Skip(1))
-            {
-                kiadok_lista.Add(new Kiadok(sor));
-            }
             List<Jatekok> jatekok_lista = new List<Jatekok>();
-            foreach (string sor in File.ReadAllLines("videogames.csv").Skip(1))
+            try
             {
-                jatekok_lista.Add(new Jatekok(sor));
+            
+                foreach (string sor in File.ReadAllLines("publishers.csv").Skip(1))
+                {
+                    kiadok_lista.Add(new Kiadok(sor));
+                }
+
+                foreach (string sor in File.ReadAllLines("videogames.csv").Skip(1))
+                {
+                    jatekok_lista.Add(new Jatekok(sor));
+                }
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("FATÁLIS HIBA!\n Valamelyik oknál fogva nem tud megfelelőlen elindulni a program!. A program most bezár.");
+                Console.WriteLine($"Hiba kód: {e}");
+                Environment.Exit(0);
             }
 
 
@@ -89,9 +100,8 @@ namespace jatekok
                     {
                         try
                         {
-                          opcio = Convert.ToChar(Console.ReadLine().ToUpper());
-                         }
-
+                            opcio = Convert.ToChar(Console.ReadLine().ToUpper());
+                        }
                         catch
                         {
                             opcio = ' ';
@@ -127,23 +137,14 @@ namespace jatekok
             Console.WriteLine("Néhány általános adat:");
             Console.WriteLine($"Játékok darab száma:{j_lista.Count()}\nKiadók darab száma: {k_lista.Count()}");
             Console.WriteLine("------------------");
-            int atlagalkalmazott = Convert.ToInt32(Math.Floor(k_lista.Average(x => x.Alkamazottak_db)));
-            Console.WriteLine($"Átlagos alkalmazott létszám cégenként: {atlagalkalmazott}\nÁtlag alatti cégek száma:{k_lista.Where(x=>x.Alkamazottak_db < atlagalkalmazott).ToList().Count()}");
-            Console.WriteLine("------------------");
             Console.Write($"Van-e solo fejlesztő? \t");
-            Console.WriteLine("Nyomjon meg egy gombot a folytatáshoz!");
-            Console.ReadKey();
             Console.WriteLine(k_lista.Any(x => x.Alkamazottak_db == 1) ? "Igen, van!" : "Nem, nincs");
             Console.WriteLine("------------------");
             var cegek_bevelete_jatekokent = k_lista.Join(j_lista, k => k.Kiado_id, j => j.Kiado_id, (k, j) => new
             {
-
                 k.Kiado_nev,
                 j.Jatek_nev,
                 Bevetel = j.Bevetel(),
-
-
-
             }).OrderByDescending(x=>x.Bevetel).ToList();
             Console.WriteLine($"Statisztika: Adott cég mennyi játékot adott ki:\n");
             Console.WriteLine("Nyomjon meg egy gombot a folytatáshoz!");
@@ -155,20 +156,127 @@ namespace jatekok
             }
             Console.WriteLine("------------------");
             Console.WriteLine($"Ha kíváncsi, hogy a cégeknek egy adott játék mennyit hozott, tekintse meg a Cegek_bevetele_jatekokent.txt állományt! ");
-
-            File.WriteAllLines("Cegek_bevetele_jatekokent.txt", cegek_bevelete_jatekokent.Select(x => x.Kiado_nev + $";{x.Jatek_nev};{x.Bevetel}"));
+            try
+            {
+                File.WriteAllLines("Cegek_bevetele_jatekokent.txt", cegek_bevelete_jatekokent.Select(x => x.Kiado_nev + $";{x.Jatek_nev};{x.Bevetel}"));
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("HIBA! Nem futott le a fájlba írás");
+                Console.WriteLine($"hiba kód: {e}");
+            }
+          
             Console.WriteLine("------------------");
             Console.Write("Nyomjon meg egy gombot, hogy visszamenjen a menübe");
             Console.ReadKey();
             Console.Clear();
             Menu(j_lista, k_lista);
-         
         }
-
+        //Szűrések
         static void Szures(List<Jatekok> j_lista, List<Kiadok> k_lista)
         {
             Console.Clear();
             Console.WriteLine("Mire szeretne szűrni?");
+            Console.WriteLine("J: Játék\nC: Cég");
+            string bekert = string.Empty;
+            do {
+                bekert = Console.ReadLine().ToUpper();
+                switch (bekert)
+                {
+                    case "J":
+                        Szures_Jatek(j_lista, k_lista);
+                        break;
+                    case "C":
+                        Szures_Ceg(j_lista, k_lista);
+                        break;
+                    default:
+                        Console.Write("Hiba!\n Adja meg újra:");
+                        break;
+                }
+            } while (bekert != "J" && bekert != "C");
+        }
+        static void Szures_Ceg(List<Jatekok> j_lista, List<Kiadok> k_lista)
+        {
+            Console.Clear();
+            Console.WriteLine("Cég szűrés\n\nMire szeretne szűrni?");
+            Console.Write("A: Alapítás\nN: Nettó vagyon\nAl: Alkamazottak\n:");
+            string bekert = string.Empty;
+            do
+            {
+                bekert = Console.ReadLine().ToUpper();
+                switch (bekert)
+                {
+                    case "A":
+                        Szures_ceg_Alapitas(j_lista, k_lista);
+                        break;
+                    case "N":
+                        Szures_ceg_Netto(j_lista, k_lista);
+                        break;
+                    case "AL":
+                        Szures_ceg_Alkamazottak(j_lista, k_lista);
+                        break;
+                }
+
+            } while (bekert != "A" && bekert != "N" && bekert != "AL");
+
+            char beker = ' ';
+            do
+            {
+                Console.Write("Szeretne még szűrni? (I/N) \n:");
+                try
+                {
+                    beker = Convert.ToChar(Console.ReadLine().ToUpper());
+                }
+                catch
+                {
+                    beker = 'a';
+                }
+                switch (beker)
+                {
+                    case 'I':
+                        Szures(j_lista, k_lista);
+                        break;
+                    case 'N':
+                        Console.Write("Nyomjon meg egy gombot, hogy visszamenjen a menübe");
+                        Console.ReadKey();
+                        Menu(j_lista, k_lista);
+                        break;
+                    default:
+                        Console.WriteLine("Hiba!");
+                        break;
+                }
+            } while (beker != 'I' && beker != 'N');
+
+        }
+        static void Szures_ceg_Alapitas(List<Jatekok> j_lista, List<Kiadok> k_lista)
+        {
+            Console.WriteLine($"Legújabban alakult cég:\n{k_lista.Where(x => x.Allapitas_datuma == k_lista.Max(y => y.Allapitas_datuma)).Select(x => $"{x.Kiado_nev} Alapítás dátuma: {x.Allapitas_datuma.ToString("yyyy.MM.dd")}").First()}");
+            Console.WriteLine("------------------");
+            Console.WriteLine($"Legrégebbóta alakult cég:\n{k_lista.Where(x => x.Allapitas_datuma == k_lista.Min(y => y.Allapitas_datuma)).Select(x => $"{x.Kiado_nev} Alapítás dátuma:{x.Allapitas_datuma.ToString("yyyy.MM.dd")}").First()}");
+            Console.WriteLine("------------------");
+        }
+        static void Szures_ceg_Netto(List<Jatekok> j_lista, List<Kiadok> k_lista)
+        {
+            Console.WriteLine($"Legvagyonosabb cég:\n{k_lista.Where(x => x.Netto_vagyon == k_lista.Max(y => y.Netto_vagyon)).Select(x => $"{x.Kiado_nev} Nettó vagyon: ${x.Netto_vagyon.ToString("f2")} millió").First()}");
+            Console.WriteLine("------------------");
+            Console.WriteLine($"Legkevesebb vagyonnal rendelkező cég:\n{k_lista.Where(x => x.Netto_vagyon == k_lista.Min(y => y.Netto_vagyon)).Select(x => $"{x.Kiado_nev} Nettó vagyon: ${x.Netto_vagyon.ToString("f2")} millió").First()}");
+            Console.WriteLine("------------------");
+            Console.WriteLine($"Cégek átlag vagyona: ${k_lista.Average(x=>x.Netto_vagyon).ToString("f2")} millió\nCégek össz vagyona: ${k_lista.Sum(x=>x.Netto_vagyon)} millió");
+        }
+        static void Szures_ceg_Alkamazottak(List<Jatekok> j_lista, List<Kiadok> k_lista)
+        {
+            Console.WriteLine($"Legtöbb alkamazotatt foglalkozató cég(ek):");
+            k_lista.Where(x => x.Alkamazottak_db == k_lista.Max(y => y.Alkamazottak_db)).Select(x => $"{x.Kiado_nev} Dolgozók száma: {x.Alkamazottak_db} db").ToList().ForEach(x => Console.WriteLine(x));
+            Console.WriteLine("------------------");
+            Console.WriteLine($"Legkevesebb alkamazotatt foglalkozató cég(ek):");
+             k_lista.Where(x => x.Alkamazottak_db == k_lista.Min(y => y.Alkamazottak_db)).Select(x => $"{x.Kiado_nev} Dolgozók száma: {x.Alkamazottak_db} db").ToList().ForEach(x => Console.WriteLine(x));
+            Console.WriteLine("------------------");
+            Console.WriteLine($"Átlagos dolgozók szána: {k_lista.Average(x => x.Alkamazottak_db).ToString("f2")} db \nÖsszes alkalmazott száma: {k_lista.Sum(x => x.Alkamazottak_db)} db");
+        }
+        static void Szures_Jatek(List<Jatekok> j_lista, List<Kiadok> k_lista)
+        {
+            Console.Clear();
+            Console.WriteLine("Játékra szűrés\n\nMire szeretne szűrni?");
             Console.Write("Á: Ár\nE: Eladott db\nÉ: Értékelés\nM: Megjelenés\n:");
             string bekert = string.Empty;
             do
@@ -177,17 +285,16 @@ namespace jatekok
                 switch (bekert)
                 {
                     case "Á":
-                        Szures_Ar(j_lista);
+                        Szures_jatek_Ar(j_lista);
                         break;
-
                     case "E":
-                        Szures_Eladott(j_lista);
+                        Szures_jatek_Eladott(j_lista);
                         break;
                     case "É":
-                        Szures_Ertekeles(j_lista);
+                        Szures_jatek_Ertekeles(j_lista);
                         break;
                     case "M":
-                        Szures_Megjelenes(j_lista);
+                        Szures_jatek_Megjelenes(j_lista);
                         break;
                     default:
                         Console.Write("Hiba!\n Adja meg újra:");
@@ -222,7 +329,7 @@ namespace jatekok
                 }
             } while (beker != 'I' && beker != 'N');
         }
-        static void Szures_Ar(List<Jatekok> j_lista)
+        static void Szures_jatek_Ar(List<Jatekok> j_lista)
         {
             Console.WriteLine("Legdrágább játék(ok):");
 
@@ -234,7 +341,7 @@ namespace jatekok
             Console.WriteLine("------------------");
             Console.WriteLine($"Játékok átlag ára: ${j_lista.Average(x => x.Ar).ToString("f2")}\nAz összes játék ára: ${j_lista.Sum(x => x.Ar).ToString("f2")}");
         }
-        static void Szures_Eladott(List<Jatekok> j_lista)
+        static void Szures_jatek_Eladott(List<Jatekok> j_lista)
         {
             string legtobbet_eladott_nev = j_lista.Where(x => x.Eladott_db == j_lista.Max(y => y.Eladott_db)).Select(x => x.Jatek_nev).First();
             double legtobb_db = j_lista.Where(x => x.Eladott_db == j_lista.Max(y => y.Eladott_db)).Select(x => x.Eladott_db).First();
@@ -248,7 +355,7 @@ namespace jatekok
             double ossz = j_lista.Sum(x => x.Eladott_db);
             Console.WriteLine($"Játékok átlag eladása: {atlag.ToString("f2")} millió db\nAz összes játék eladása: {ossz.ToString("f2")} millió db ");
         }
-        static void Szures_Ertekeles(List<Jatekok> j_lista)
+        static void Szures_jatek_Ertekeles(List<Jatekok> j_lista)
         {
             Console.WriteLine("Legmagasabbra értékelt játék(ok):");
 
@@ -260,7 +367,7 @@ namespace jatekok
             Console.WriteLine("------------------");
             Console.WriteLine($"Játékok átlag értékelése: 100/{j_lista.Average(x => x.Ertekeles).ToString("f2")}");
         }
-        static void Szures_Megjelenes(List<Jatekok> j_lista)
+        static void Szures_jatek_Megjelenes(List<Jatekok> j_lista)
         {
             Console.WriteLine($"Legfrissebb játék:\n{j_lista.Where(x => x.Megjelenesi_Datum == j_lista.Max(y => y.Megjelenesi_Datum)).Select(x => $"{x.Jatek_nev} Megjelenési idő: {x.Megjelenesi_Datum.ToString("yyyy.MM.dd")}").First()}");
             Console.WriteLine("------------------");
